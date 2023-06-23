@@ -1,0 +1,33 @@
+<button class="btn btn-primary" (click)="onAddUser()">Add User</button>
+<input type="text" class="form-control mt-2" [formControl]="search" />
+<div class="players" *ngIf="users$ | async as users">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Cards</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users; let i = index">
+        <th scope="row">{{ i }}</th>
+        <td>{{ user.name }}</td>
+        <td>
+          <li *ngFor="let card of user.cards">
+            {{ card.name }} - {{ card.description }}
+          </li>
+        </td>
+        <td>
+          <button class="btn btn-primary" (click)="onEditUser(user)">
+            Edit
+          </button>
+          <button class="btn btn-danger ms-2" (click)="onDeleteUser(user)">
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

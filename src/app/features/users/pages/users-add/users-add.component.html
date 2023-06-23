@@ -1,0 +1,42 @@
+<form [formGroup]="form">
+  <div class="mb-3">
+    <label for="name" class="form-label">Enter user name</label>
+    <input
+      id="name"
+      type="text"
+      class="form-control"
+      placeholder="User name"
+      formControlName="name"
+    />
+    <button class="btn btn-primary mt-2" (click)="onAddCard()">Add Card</button>
+  </div>
+  <div
+    class="cards"
+    formArrayName="cards"
+    *ngFor="let card of cards; let i = index"
+  >
+    <form class="row g-3" [formArrayName]="i">
+      <div class="col-auto">
+        <label for="name" class="form-label">Enter card name</label>
+        <input
+          id="name"
+          type="text"
+          class="form-control"
+          placeholder="Card name"
+          formControlName="name"
+        />
+      </div>
+      <div class="col-auto">
+        <label for="name" class="form-label">Enter card description</label>
+        <input
+          id="name"
+          type="text"
+          class="form-control"
+          placeholder="Card description"
+          formControlName="description"
+        />
+      </div>
+    </form>
+  </div>
+</form>
+<button class="btn btn-primary mt-2" [disabled]="form.invalid" (click)="onAddUser()">Save</button>
