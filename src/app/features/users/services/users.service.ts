@@ -4,6 +4,7 @@ import {
   addDoc,
   collection,
   collectionData,
+  deleteDoc,
   doc,
   getDocs,
   query,
@@ -41,9 +42,21 @@ export class UsersService {
 
     const querySnapshot = await getDocs(q);
 
-    querySnapshot.forEach(async(document) => {
-      const docRef = doc(this._firestore, 'users', document.id)
-      await updateDoc(docRef, {...user})
-    })
+    querySnapshot.forEach(async (document) => {
+      const docRef = doc(this._firestore, 'users', document.id);
+      await updateDoc(docRef, { ...user });
+    });
+  }
+
+  async deleteUser(id: string) {
+    const userRef = collection(this._firestore, 'users');
+    let q = query(userRef, where('id', '==', id));
+
+    const querySnapshot = await getDocs(q);
+
+    querySnapshot.forEach(async (document) => {
+      const docRef = doc(this._firestore, 'users', document.id);
+      await deleteDoc(docRef);
+    });
   }
 }

@@ -41,5 +41,7 @@ export class UsersListComponent implements OnInit {
     this._router.navigateByUrl('users/edit', { state: { user } });
   }
 
-  onDeleteUser(user: User): void {}
+  onDeleteUser(user: User): void {
+    this._service.deleteUser(user.id);
+  }
 }

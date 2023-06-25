@@ -19,7 +19,7 @@ import { UsersService } from '../../services/users.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class UsersAddComponent {
-  private _facade = inject(UsersService);
+  private _service = inject(UsersService);
 
   form = new FormGroup({
     name: new FormControl('', Validators.required),
@@ -40,7 +40,7 @@ export class UsersAddComponent {
   }
 
   onAddUser(): void {
-    this._facade.addUser({
+    this._service.addUser({
       id: new Date().getTime().toString(),
       ...this.form.getRawValue(),
     } as User);

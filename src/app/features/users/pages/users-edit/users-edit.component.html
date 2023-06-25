@@ -40,4 +40,10 @@
     </form>
   </div>
 </form>
-<button class="btn btn-primary mt-2">Save</button>
+<button
+  class="btn btn-primary mt-2"
+  (click)="onUpdateUser()"
+  [disabled]="form.invalid"
+>
+  Save
+</button>
