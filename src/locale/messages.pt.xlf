@@ -1,3 +1,88 @@
 <xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US" trgLang="pt">
-  <file original="ng.template" id="ngi18n"/>
+  <file original="ng.template" id="ngi18n">
+    <unit id="2005878310636944938">
+      <segment state="initial">
+        <source>Enter user name</source>
+        <target>Digite o nome do usuário</target>
+      </segment>
+    </unit>
+    <unit id="5312727456282218392">
+      <segment state="initial">
+        <source>User name</source>
+        <target>Nome de usuário</target>
+      </segment>
+    </unit>
+    <unit id="294522791497169272">
+      <segment state="initial">
+        <source>Enter card name</source>
+        <target>Digite o nome do cartão</target>
+      </segment>
+    </unit>
+    <unit id="7194190145673835332">
+      <segment state="initial">
+        <source>Card name</source>
+        <target>Nome do cartão</target>
+      </segment>
+    </unit>
+    <unit id="7121369361641019338">
+      <segment state="initial">
+        <source>Enter card description</source>
+        <target>Digite a descrição do cartão</target>
+      </segment>
+    </unit>
+    <unit id="96919982711197353">
+      <segment state="initial">
+        <source>Card description</source>
+        <target>Descrição do cartão</target>
+      </segment>
+    </unit>
+    <unit id="1786540073279549582">
+      <segment state="initial">
+        <source> Save </source>
+        <target> Salvar </target>
+      </segment>
+    </unit>
+    <unit id="2941198503117307737">
+      <segment state="initial">
+        <source>Add User</source>
+        <target>Criar usuário</target>
+      </segment>
+    </unit>
+    <unit id="8953033926734869941">
+      <segment state="initial">
+        <source>Name</source>
+        <target>Nome</target>
+      </segment>
+    </unit>
+    <unit id="5811097982080929097">
+      <segment state="initial">
+        <source>Cards</source>
+        <target>Cartões</target>
+      </segment>
+    </unit>
+    <unit id="3193976279273491157">
+      <segment state="initial">
+        <source>Actions</source>
+        <target>Ações</target>
+      </segment>
+    </unit>
+    <unit id="5377078063439833222">
+      <segment state="initial">
+        <source> Edit </source>
+        <target> Editar </target>
+      </segment>
+    </unit>
+    <unit id="6660925946511264619">
+      <segment state="initial">
+        <source> Delete </source>
+        <target> Excluir </target>
+      </segment>
+    </unit>
+    <unit id="6706315081458606044">
+      <segment state="initial">
+        <source>Add Card</source>
+        <target>Adicionar Cartão</target>
+      </segment>
+    </unit>
+  </file>
 </xliff>

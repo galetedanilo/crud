@@ -1,14 +1,15 @@
 <form [formGroup]="form">
   <div class="mb-3">
-    <label for="name" class="form-label">Enter user name</label>
+    <label for="name" class="form-label" i18n>Enter user name</label>
     <input
       id="name"
       type="text"
       class="form-control"
       placeholder="User name"
       formControlName="name"
+      i18n-placeholder
     />
-    <button class="btn btn-primary mt-2" (click)="onAddCard()">Add Card</button>
+    <button class="btn btn-primary mt-2" (click)="onAddCard()" i18n>Add Card</button>
   </div>
   <div
     class="cards"
@@ -17,23 +18,25 @@
   >
     <form class="row g-3" [formArrayName]="i">
       <div class="col-auto">
-        <label for="name" class="form-label">Enter card name</label>
+        <label for="name" class="form-label" i18n>Enter card name</label>
         <input
           id="name"
           type="text"
           class="form-control"
           placeholder="Card name"
           formControlName="name"
+          i18n-placeholder
         />
       </div>
       <div class="col-auto">
-        <label for="name" class="form-label">Enter card description</label>
+        <label for="name" class="form-label" i18n>Enter card description</label>
         <input
           id="name"
           type="text"
           class="form-control"
           placeholder="Card description"
           formControlName="description"
+          i18n-placeholder
         />
       </div>
     </form>
@@ -43,6 +46,7 @@
   class="btn btn-primary mt-2"
   [disabled]="form.invalid"
   (click)="onAddUser()"
+  i18n
 >
   Save
 </button>

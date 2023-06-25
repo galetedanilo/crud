@@ -1,4 +1,75 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US">
-  <file id="ngi18n" original="ng.template"/>
+  <file id="ngi18n" original="ng.template">
+    <unit id="1786540073279549582">
+      <segment>
+        <source> Save </source>
+      </segment>
+    </unit>
+    <unit id="2005878310636944938">
+      <segment>
+        <source>Enter user name</source>
+      </segment>
+    </unit>
+    <unit id="2941198503117307737">
+      <segment>
+        <source>Add User</source>
+      </segment>
+    </unit>
+    <unit id="294522791497169272">
+      <segment>
+        <source>Enter card name</source>
+      </segment>
+    </unit>
+    <unit id="3193976279273491157">
+      <segment>
+        <source>Actions</source>
+      </segment>
+    </unit>
+    <unit id="5312727456282218392">
+      <segment>
+        <source>User name</source>
+      </segment>
+    </unit>
+    <unit id="5377078063439833222">
+      <segment>
+        <source> Edit </source>
+      </segment>
+    </unit>
+    <unit id="5811097982080929097">
+      <segment>
+        <source>Cards</source>
+      </segment>
+    </unit>
+    <unit id="6660925946511264619">
+      <segment>
+        <source> Delete </source>
+      </segment>
+    </unit>
+    <unit id="7121369361641019338">
+      <segment>
+        <source>Enter card description</source>
+      </segment>
+    </unit>
+    <unit id="7194190145673835332">
+      <segment>
+        <source>Card name</source>
+      </segment>
+    </unit>
+    <unit id="8953033926734869941">
+      <segment>
+        <source>Name</source>
+      </segment>
+    </unit>
+    <unit id="96919982711197353">
+      <segment>
+        <source>Card description</source>
+      </segment>
+    </unit>
+    <unit id="6706315081458606044">
+      <segment>
+        <source>Add Card</source>
+      </segment>
+    </unit>
+  </file>
 </xliff>
